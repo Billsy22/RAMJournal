@@ -14,6 +14,7 @@
 		16000EA42282642B008484B6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16000EA32282642B008484B6 /* Constants.swift */; };
 		16000EA622826504008484B6 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16000EA522826504008484B6 /* Entry.swift */; };
 		16000EA82282669D008484B6 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16000EA72282669D008484B6 /* EntryController.swift */; };
+		16000EAA22826D86008484B6 /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16000EA922826D86008484B6 /* EntryListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		16000EA32282642B008484B6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		16000EA522826504008484B6 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		16000EA72282669D008484B6 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		16000EA922826D86008484B6 /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		16000EA022826405008484B6 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				16000EA922826D86008484B6 /* EntryListTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16000EA622826504008484B6 /* Entry.swift in Sources */,
+				16000EAA22826D86008484B6 /* EntryListTableViewController.swift in Sources */,
 				16000E8B2282638F008484B6 /* AppDelegate.swift in Sources */,
 				16000EA82282669D008484B6 /* EntryController.swift in Sources */,
 				16000EA42282642B008484B6 /* Constants.swift in Sources */,
