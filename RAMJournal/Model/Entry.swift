@@ -16,13 +16,11 @@ class Entry: Equatable, Codable {
     var title: String
     var body: String
     var dateSaved: String
-    var entryNumber: Int
     
-    init(title: String, body: String, dateSaved: String, entryNumber: Int) {
+    init(title: String, body: String, dateSaved: String) {
         self.title = title
         self.body = body
         self.dateSaved = dateSaved
-        self.entryNumber = entryNumber
     }
     
     
@@ -31,7 +29,6 @@ class Entry: Equatable, Codable {
     static func == (lhs: Entry, rhs: Entry) -> Bool {
         return lhs.title == rhs.title &&
         lhs.body == rhs.body &&
-        lhs.dateSaved == rhs.dateSaved &&
-        lhs.entryNumber == rhs.entryNumber
+        lhs.dateSaved == rhs.dateSaved
     }
 }

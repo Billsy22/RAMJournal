@@ -23,8 +23,8 @@ class EntryController {
     }
     // MARK: -  Entry management functions
     
-    func createNewEntry(title: String, body: String, dateSaved: String, entryNumber: Int) {
-        let newEntry = Entry(title: title, body: body, dateSaved: dateSaved, entryNumber: entryNumber)
+    func createNewEntry(title: String, body: String, dateSaved: String) {
+        let newEntry = Entry(title: title, body: body, dateSaved: dateSaved)
         self.entries.append(newEntry)
         saveToStorage()
     }
