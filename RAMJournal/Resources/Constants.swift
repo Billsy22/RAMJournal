@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+struct Constants {
+    
+    // Shared instance
+    static let shared = Constants()
+    
+}

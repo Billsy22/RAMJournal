@@ -12,6 +12,7 @@ class Entry: Equatable, Codable {
     
     
     // MARK: -  Properties
+    
     var title: String
     var body: String
     var dateSaved: String
@@ -24,7 +25,9 @@ class Entry: Equatable, Codable {
         self.entryNumber = entryNumber
     }
     
+    
     // MARK: -  Equatable Protocol
+    
     static func == (lhs: Entry, rhs: Entry) -> Bool {
         return lhs.title == rhs.title &&
         lhs.body == rhs.body &&
