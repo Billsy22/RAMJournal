@@ -13,4 +13,7 @@ struct Constants {
     // Shared instance
     static let shared = Constants()
     
+    // MARK: -  String Literals
+    let editEntrySegueIdentifier = "editEntrySegue"
+    let entryTableViewCellIdentifier = "entryTableViewCell"
 }

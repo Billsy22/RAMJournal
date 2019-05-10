@@ -15,6 +15,7 @@
 		16000EA622826504008484B6 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16000EA522826504008484B6 /* Entry.swift */; };
 		16000EA82282669D008484B6 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16000EA72282669D008484B6 /* EntryController.swift */; };
 		16000EAA22826D86008484B6 /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16000EA922826D86008484B6 /* EntryListTableViewController.swift */; };
+		16000EAC2284FAFD008484B6 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16000EAB2284FAFD008484B6 /* EntryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		16000EA522826504008484B6 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		16000EA72282669D008484B6 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 		16000EA922826D86008484B6 /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
+		16000EAB2284FAFD008484B6 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				16000EA922826D86008484B6 /* EntryListTableViewController.swift */,
+				16000EAB2284FAFD008484B6 /* EntryDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				16000EAA22826D86008484B6 /* EntryListTableViewController.swift in Sources */,
 				16000E8B2282638F008484B6 /* AppDelegate.swift in Sources */,
 				16000EA82282669D008484B6 /* EntryController.swift in Sources */,
+				16000EAC2284FAFD008484B6 /* EntryDetailViewController.swift in Sources */,
 				16000EA42282642B008484B6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
