@@ -7,13 +7,23 @@
 //
 
 import Foundation
+import UIKit
 
 struct Constants {
     
-    // Shared instance
+    
+    // MARK: -  Singleton
+    
     static let shared = Constants()
     
+    
     // MARK: -  String Literals
+    
     let editEntrySegueIdentifier = "editEntrySegue"
     let entryTableViewCellIdentifier = "entryTableViewCell"
+    
+    
+    // MARK: -  Colors
+    
+    let textViewBorderColor = UIColor(red: 215.0/255.0, green: 215.0/255.0, blue: 215.0/255.0, alpha: 1).cgColor
 }

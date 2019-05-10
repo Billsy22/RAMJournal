@@ -16,6 +16,8 @@ class EntryDetailViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         entryBodyTextView.delegate = self
+        textViewFormatChange()
+        updateViews()
     }
     
     
@@ -26,10 +28,26 @@ class EntryDetailViewController: UIViewController, UITextViewDelegate {
     var entry: Entry?
     
     
+    // MARK: -  Actions
+    
+    @IBAction func saveButtonTapped(_ sender: Any) {
+        guard let entryTitle = entryTitleTextField.text, let entryBody = entryBodyTextView.text else { return }
+        
+        if let entry = entry {
+            EntryController.shared.update(entry: entry, withTitle: entryTitle, andBody: entryBody)
+        } else {
+            EntryController.shared.createNewEntry(title: entryTitle, body: entryBody, dateSaved: "date")
+        }
+        navigationController?.popViewController(animated: true)
+    }
+    
+    
     // MARK: -  DRY Methods
     
     func textViewFormatChange() {
-        
+        entryBodyTextView.layer.borderColor = Constants.shared.textViewBorderColor
+        entryBodyTextView.layer.borderWidth = 0.6
+        entryBodyTextView.layer.cornerRadius = 6.0
     }
     
     func updateViews() {
