@@ -26,4 +26,16 @@ struct Constants {
     // MARK: -  Colors
     
     let textViewBorderColor = UIColor(red: 215.0/255.0, green: 215.0/255.0, blue: 215.0/255.0, alpha: 1).cgColor
+    
+    
+    // MARK: -  DateFormatter
+    
+    func formatDate() -> String {
+//        let dateFormatterGet = DateFormatter()
+//        dateFormatterGet.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let dateFormatterSet = DateFormatter()
+        dateFormatterSet.dateFormat = "MM/dd/yyyy"
+        let dateString = dateFormatterSet.string(from: Date())
+        return dateString
+    }
 }

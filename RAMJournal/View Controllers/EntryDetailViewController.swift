@@ -36,7 +36,8 @@ class EntryDetailViewController: UIViewController, UITextViewDelegate {
         if let entry = entry {
             EntryController.shared.update(entry: entry, withTitle: entryTitle, andBody: entryBody)
         } else {
-            EntryController.shared.createNewEntry(title: entryTitle, body: entryBody, dateSaved: "date")
+            let date = Constants.shared.formatDate()
+            EntryController.shared.createNewEntry(title: entryTitle, body: entryBody, dateSaved: date)
         }
         navigationController?.popViewController(animated: true)
     }
