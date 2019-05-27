@@ -53,11 +53,18 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="4h5-OC-7Lg">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ceI-F4-hIy">
-                            <connections>
-                                <segue destination="IfI-wZ-9qD" kind="show" id="igw-He-psB"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="ceI-F4-hIy">
+                                <connections>
+                                    <segue destination="IfI-wZ-9qD" kind="show" id="igw-He-psB"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="organize" id="53K-du-rOh">
+                                <connections>
+                                    <action selector="randomButtonTapped:" destination="rcO-Qn-lSk" id="0UN-Ts-dkQ"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cf-w0-zPs" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -44,6 +44,13 @@ class EntryController {
         saveToStorage()
     }
     
+    /// "Random Access Memory" this function is used to randomly select an index in a range from 0 to the number of items in our "entries" source, pull that specific entry from the list, and return that entry.
+    func ram() -> Entry? {
+        let randomIndex = Int.random(in: 0..<self.entries.count)
+        guard let randomEntry = entries[randomIndex] else { return nil }
+        return randomEntry
+    }
+    
     
     // MARK: -  Persistence
     
