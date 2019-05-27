@@ -31,11 +31,18 @@ struct Constants {
     // MARK: -  DateFormatter
     
     func formatDate() -> String {
-//        let dateFormatterGet = DateFormatter()
-//        dateFormatterGet.dateFormat = "yyyy-MM-dd HH:mm:ss"
         let dateFormatterSet = DateFormatter()
         dateFormatterSet.dateFormat = "MM/dd/yyyy"
         let dateString = dateFormatterSet.string(from: Date())
         return dateString
+    }
+    
+    
+    // MARK: -  DRY Methods
+    
+    func textViewFormatChange(textView: UITextView) {
+        textView.layer.borderColor = Constants.shared.textViewBorderColor
+        textView.layer.borderWidth = 0.6
+        textView.layer.cornerRadius = 6.0
     }
 }

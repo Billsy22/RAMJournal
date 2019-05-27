@@ -16,7 +16,7 @@ class EntryDetailViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         entryBodyTextView.delegate = self
-        textViewFormatChange()
+        Constants.shared.textViewFormatChange(textView: entryBodyTextView)
         updateViews()
     }
     
@@ -43,13 +43,7 @@ class EntryDetailViewController: UIViewController, UITextViewDelegate {
     }
     
     
-    // MARK: -  DRY Methods
-    
-    func textViewFormatChange() {
-        entryBodyTextView.layer.borderColor = Constants.shared.textViewBorderColor
-        entryBodyTextView.layer.borderWidth = 0.6
-        entryBodyTextView.layer.cornerRadius = 6.0
-    }
+    // MARK: -  View Methods
     
     func updateViews() {
         if entry == nil {

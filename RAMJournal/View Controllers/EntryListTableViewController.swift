@@ -15,13 +15,20 @@ class EntryListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        randomButtonActivation()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        randomButtonActivation()
         tableView.reloadData()
     }
 
+    
+    // MARK: -  Properties
+    
+    @IBOutlet weak var randomEntryButton: UIBarButtonItem!
+    
     
     // MARK: - Table View Data Source
 
@@ -43,17 +50,31 @@ class EntryListTableViewController: UITableViewController {
             EntryController.shared.deleteSelected(entry: entry)
             tableView.deleteRows(at: [indexPath], with: .fade)
             tableView.reloadData()
+            randomButtonActivation()
         }
     }
     
-    /*
+
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Constants.shared.editEntrySegueIdentifier {
+            guard let indexPath = self.tableView.indexPathForSelectedRow else { return }
+            let entry = EntryController.shared.entries[indexPath.row]
+            guard let editEntryViewController = segue.destination as? EntryDetailViewController else { return }
+            editEntryViewController.entry = entry
+        }
+    }
+    
+    
+    // MARK: -  DRY Methods
+    
+    func randomButtonActivation() {
+        if EntryController.shared.entries.count == 0 {
+            self.randomEntryButton.isEnabled = false
+        } else {
+            self.randomEntryButton.isEnabled = true
+        }
+    }
 }

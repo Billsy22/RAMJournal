@@ -61,11 +61,14 @@
                             </barButtonItem>
                             <barButtonItem systemItem="organize" id="53K-du-rOh">
                                 <connections>
-                                    <action selector="randomButtonTapped:" destination="rcO-Qn-lSk" id="0UN-Ts-dkQ"/>
+                                    <segue destination="S1F-dB-ohr" kind="show" identifier="" id="W3F-0A-8sf"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="randomEntryButton" destination="53K-du-rOh" id="cQU-Tu-Fcq"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cf-w0-zPs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,8 +142,52 @@
             </objects>
             <point key="canvasLocation" x="573.91304347826087" y="173.4375"/>
         </scene>
+        <!--Random Entry View Controller-->
+        <scene sceneID="P06-vk-3OP">
+            <objects>
+                <viewController id="S1F-dB-ohr" customClass="RandomEntryViewController" customModule="RAMJournal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mGe-tv-URJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entry Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aaj-VP-Ev2">
+                                <rect key="frame" x="25" y="113" width="364" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsa-cf-Hqx">
+                                <rect key="frame" x="25" y="168" width="364" height="684"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7Jq-dn-HMd" firstAttribute="trailing" secondItem="aaj-VP-Ev2" secondAttribute="trailing" constant="25" id="5aQ-mI-Qc3"/>
+                            <constraint firstItem="gsa-cf-Hqx" firstAttribute="leading" secondItem="7Jq-dn-HMd" secondAttribute="leading" constant="25" id="AU4-Cg-mXF"/>
+                            <constraint firstItem="aaj-VP-Ev2" firstAttribute="leading" secondItem="7Jq-dn-HMd" secondAttribute="leading" constant="25" id="PYH-rC-wSH"/>
+                            <constraint firstItem="aaj-VP-Ev2" firstAttribute="top" secondItem="7Jq-dn-HMd" secondAttribute="top" constant="25" id="aZc-Bz-AWT"/>
+                            <constraint firstItem="gsa-cf-Hqx" firstAttribute="top" secondItem="aaj-VP-Ev2" secondAttribute="bottom" constant="25" id="dIg-Qq-TOG"/>
+                            <constraint firstItem="7Jq-dn-HMd" firstAttribute="bottom" secondItem="gsa-cf-Hqx" secondAttribute="bottom" constant="10" id="kKh-pP-4k9"/>
+                            <constraint firstItem="7Jq-dn-HMd" firstAttribute="trailing" secondItem="gsa-cf-Hqx" secondAttribute="trailing" constant="25" id="l8C-n8-iJL"/>
+                            <constraint firstItem="gsa-cf-Hqx" firstAttribute="top" secondItem="aaj-VP-Ev2" secondAttribute="bottom" constant="25" id="o1Y-jb-uOX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7Jq-dn-HMd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wYF-GT-d7m"/>
+                    <connections>
+                        <outlet property="entryBodyTextView" destination="gsa-cf-Hqx" id="kuG-Hk-Y5K"/>
+                        <outlet property="entryTitleTextField" destination="aaj-VP-Ev2" id="bni-3X-Xf0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uJt-hn-990" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1342" y="-506"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="b1g-Wd-pnr"/>
+        <segue reference="igw-He-psB"/>
     </inferredMetricsTieBreakers>
 </document>

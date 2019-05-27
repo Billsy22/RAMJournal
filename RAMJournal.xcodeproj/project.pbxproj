@@ -16,6 +16,7 @@
 		16000EA82282669D008484B6 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16000EA72282669D008484B6 /* EntryController.swift */; };
 		16000EAA22826D86008484B6 /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16000EA922826D86008484B6 /* EntryListTableViewController.swift */; };
 		16000EAC2284FAFD008484B6 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16000EAB2284FAFD008484B6 /* EntryDetailViewController.swift */; };
+		16054772229C69660066B5C4 /* RandomEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16054771229C69660066B5C4 /* RandomEntryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		16000EA72282669D008484B6 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 		16000EA922826D86008484B6 /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
 		16000EAB2284FAFD008484B6 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
+		16054771229C69660066B5C4 /* RandomEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomEntryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			children = (
 				16000EA922826D86008484B6 /* EntryListTableViewController.swift */,
 				16000EAB2284FAFD008484B6 /* EntryDetailViewController.swift */,
+				16054771229C69660066B5C4 /* RandomEntryViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16000EA622826504008484B6 /* Entry.swift in Sources */,
+				16054772229C69660066B5C4 /* RandomEntryViewController.swift in Sources */,
 				16000EAA22826D86008484B6 /* EntryListTableViewController.swift in Sources */,
 				16000E8B2282638F008484B6 /* AppDelegate.swift in Sources */,
 				16000EA82282669D008484B6 /* EntryController.swift in Sources */,
