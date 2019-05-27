@@ -17,6 +17,7 @@
 		16000EAA22826D86008484B6 /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16000EA922826D86008484B6 /* EntryListTableViewController.swift */; };
 		16000EAC2284FAFD008484B6 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16000EAB2284FAFD008484B6 /* EntryDetailViewController.swift */; };
 		16054772229C69660066B5C4 /* RandomEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16054771229C69660066B5C4 /* RandomEntryViewController.swift */; };
+		16054774229C75300066B5C4 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16054773229C75300066B5C4 /* TutorialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		16000EA922826D86008484B6 /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
 		16000EAB2284FAFD008484B6 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
 		16054771229C69660066B5C4 /* RandomEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomEntryViewController.swift; sourceTree = "<group>"; };
+		16054773229C75300066B5C4 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				16000EA922826D86008484B6 /* EntryListTableViewController.swift */,
 				16000EAB2284FAFD008484B6 /* EntryDetailViewController.swift */,
 				16054771229C69660066B5C4 /* RandomEntryViewController.swift */,
+				16054773229C75300066B5C4 /* TutorialViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			files = (
 				16000EA622826504008484B6 /* Entry.swift in Sources */,
 				16054772229C69660066B5C4 /* RandomEntryViewController.swift in Sources */,
+				16054774229C75300066B5C4 /* TutorialViewController.swift in Sources */,
 				16000EAA22826D86008484B6 /* EntryListTableViewController.swift in Sources */,
 				16000E8B2282638F008484B6 /* AppDelegate.swift in Sources */,
 				16000EA82282669D008484B6 /* EntryController.swift in Sources */,

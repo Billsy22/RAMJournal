@@ -53,6 +53,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="4h5-OC-7Lg">
+                        <barButtonItem key="leftBarButtonItem" title="Help" id="gyy-QX-X1b">
+                            <connections>
+                                <segue destination="Us4-bu-xHi" kind="popoverPresentation" popoverAnchorBarButtonItem="gyy-QX-X1b" id="lmG-aq-5Vq">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem systemItem="add" id="ceI-F4-hIy">
                                 <connections>
@@ -123,6 +130,100 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OMt-Eq-A9f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2113" y="173"/>
+        </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="Gfb-To-Dh5">
+            <objects>
+                <viewController id="Us4-bu-xHi" customClass="TutorialViewController" customModule="RAMJournal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ssm-DB-CbI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="g5P-X3-bxq" userLabel="Main Stack">
+                                <rect key="frame" x="20" y="64" width="374" height="778"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to RAM Journal!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMx-wp-lnA">
+                                        <rect key="frame" x="0.0" y="0.0" width="197.5" height="102.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In computers, smart phones, and other technology that uses memory, &quot;RAM&quot; stands for, &quot;Random Access Memory.&quot; " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCL-4v-h1g">
+                                        <rect key="frame" x="0.0" y="112.5" width="374" height="102.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vet-lk-QT5">
+                                        <rect key="frame" x="0.0" y="225" width="355" height="102.5"/>
+                                        <string key="text">What is a common mistake in journaling? Forgetting to re-read old entries. Now all you have to do is tap a button and an old entry will appear!</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To start a new entry hit the &quot;+&quot; button" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTK-ti-16u">
+                                        <rect key="frame" x="0.0" y="337.5" width="288.5" height="103"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To edit an entry, simply tap the title of the entry you wish to edit." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAR-Ru-7CF">
+                                        <rect key="frame" x="0.0" y="450.5" width="365" height="102.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To view one of your randomly selected previous entries, hit the folder icon and re-live a random memory from your life." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxM-Gs-em9">
+                                        <rect key="frame" x="0.0" y="563" width="368.5" height="102.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0sD-b2-LzR" userLabel="Button Stack">
+                                        <rect key="frame" x="0.0" y="675.5" width="374" height="102.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sgk-tO-eZZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="102.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFA-yl-whW">
+                                                <rect key="frame" x="124.5" y="30" width="125" height="42"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="Got It!">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="gotItButton:" destination="Us4-bu-xHi" eventType="touchUpInside" id="80A-Up-cL0"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mfo-y6-WhG">
+                                                <rect key="frame" x="249.5" y="0.0" width="124.5" height="102.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0sD-b2-LzR" firstAttribute="leading" secondItem="g5P-X3-bxq" secondAttribute="leading" id="d6s-Bs-2Td"/>
+                                    <constraint firstAttribute="bottom" secondItem="0sD-b2-LzR" secondAttribute="bottom" id="dng-P8-NsZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="0sD-b2-LzR" secondAttribute="trailing" id="iQr-O3-Pg5"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g5P-X3-bxq" firstAttribute="top" secondItem="IHE-je-Nm7" secondAttribute="top" constant="20" id="Mdm-uJ-CGl"/>
+                            <constraint firstAttribute="trailing" secondItem="g5P-X3-bxq" secondAttribute="trailing" constant="20" id="Nsd-0h-2tF"/>
+                            <constraint firstItem="g5P-X3-bxq" firstAttribute="leading" secondItem="IHE-je-Nm7" secondAttribute="leading" constant="20" id="jdz-nt-Ug4"/>
+                            <constraint firstItem="IHE-je-Nm7" firstAttribute="bottom" secondItem="g5P-X3-bxq" secondAttribute="bottom" constant="20" id="zo3-Bm-lhn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IHE-je-Nm7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c5Q-vC-CqJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-359" y="822"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lks-wE-dY2">
