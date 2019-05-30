@@ -16,7 +16,7 @@ class EntryListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationBarSetup()
-        removeEmptyTableViewCells()
+        setUpTableView()
         randomButtonActivation()
     }
     
@@ -45,6 +45,7 @@ class EntryListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.shared.entryTableViewCellIdentifier, for: indexPath)
         guard let entry = EntryController.shared.entries[indexPath.section] else { return UITableViewCell() }
+        cell.widthAnchor.constraint(equalToConstant: self.tableView.frame.width / 2)
         cell.textLabel?.text = entry.title
         cell.detailTextLabel?.text = entry.dateSaved
         return cell
@@ -102,7 +103,7 @@ class EntryListTableViewController: UITableViewController {
         self.navigationController?.navigationBar.backgroundColor = .clear
     }
     
-    func removeEmptyTableViewCells() {
+    func setUpTableView() {
         self.tableView.tableFooterView = UIView.init(frame: .zero)
         self.tableView.tableFooterView?.backgroundColor = .clear
     }
