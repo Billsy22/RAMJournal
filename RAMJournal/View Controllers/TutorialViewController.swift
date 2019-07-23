@@ -11,10 +11,16 @@ import UIKit
 class TutorialViewController: UIViewController {
 
     
+    // MARK: -  Properties
+    
+    @IBOutlet weak var gotItButton: UIButton!
+    
+    
     // MARK: -  Life Cycles
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        gotItButton.layer.cornerRadius = 5
     }
     
     

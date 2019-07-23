@@ -18,6 +18,7 @@
 		16000EAC2284FAFD008484B6 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16000EAB2284FAFD008484B6 /* EntryDetailViewController.swift */; };
 		16054772229C69660066B5C4 /* RandomEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16054771229C69660066B5C4 /* RandomEntryViewController.swift */; };
 		16054774229C75300066B5C4 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16054773229C75300066B5C4 /* TutorialViewController.swift */; };
+		16210EBF22E69DDA00E8D5E3 /* FloatingPlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16210EBE22E69DDA00E8D5E3 /* FloatingPlusButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		16000EAB2284FAFD008484B6 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
 		16054771229C69660066B5C4 /* RandomEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomEntryViewController.swift; sourceTree = "<group>"; };
 		16054773229C75300066B5C4 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		16210EBE22E69DDA00E8D5E3 /* FloatingPlusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPlusButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			children = (
 				16000E8E2282638F008484B6 /* Main.storyboard */,
 				16000E9322826390008484B6 /* LaunchScreen.storyboard */,
+				16210EBE22E69DDA00E8D5E3 /* FloatingPlusButton.swift */,
 			);
 			path = "Storyboards and Views";
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				16000EAA22826D86008484B6 /* EntryListTableViewController.swift in Sources */,
 				16000E8B2282638F008484B6 /* AppDelegate.swift in Sources */,
 				16000EA82282669D008484B6 /* EntryController.swift in Sources */,
+				16210EBF22E69DDA00E8D5E3 /* FloatingPlusButton.swift in Sources */,
 				16000EAC2284FAFD008484B6 /* EntryDetailViewController.swift in Sources */,
 				16000EA42282642B008484B6 /* Constants.swift in Sources */,
 			);

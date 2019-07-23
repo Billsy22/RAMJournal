@@ -35,11 +35,11 @@ class EntryListTableViewController: UITableViewController {
     // MARK: - Table View Data Source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return EntryController.shared.entries.count
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return EntryController.shared.entries.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -50,18 +50,6 @@ class EntryListTableViewController: UITableViewController {
         cell.detailTextLabel?.text = entry.dateSaved
         return cell
     }
-    
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 5
-    }
-    
-//    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-//        if numberOfSections(in: tableView) == EntryController.shared.entries.count {
-//            return 50
-//        } else {
-//            return 0
-//        }
-//    }
 
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
