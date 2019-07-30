@@ -18,6 +18,7 @@ class EntryListTableViewController: UITableViewController {
         navigationBarSetup()
         setUpTableView()
         randomButtonActivation()
+        createFloatingPlusButton()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -25,12 +26,24 @@ class EntryListTableViewController: UITableViewController {
         randomButtonActivation()
         tableView.reloadData()
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        floatingPlusButton.removeFromSuperview()
+    }
 
     
     // MARK: -  Properties
     
     @IBOutlet weak var randomEntryButton: UIBarButtonItem!
+    var floatingPlusButton = UIButton()
     
+    
+    // MARK: -  Actions
+    
+    @objc func floatingPlusButtonTapped() {
+        self.present(EntryDetailViewController(), animated: true, completion: nil)
+    }
     
     // MARK: - Table View Data Source
     
@@ -64,7 +77,6 @@ class EntryListTableViewController: UITableViewController {
 
     // MARK: - Navigation
 
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == Constants.shared.editEntrySegueIdentifier {
             guard let indexPath = self.tableView.indexPathForSelectedRow else { return }
@@ -83,6 +95,19 @@ class EntryListTableViewController: UITableViewController {
         } else {
             self.randomEntryButton.isEnabled = true
         }
+    }
+    
+    func createFloatingPlusButton() {
+        floatingPlusButton = UIButton(type: .custom)
+        floatingPlusButton.frame = CGRect(x: 310.0, y: 775.0, width: 75.0, height: 75.0)
+        if let window = UIApplication.shared.keyWindow {
+            window.addSubview(floatingPlusButton)
+        }
+        floatingPlusButton.translatesAutoresizingMaskIntoConstraints = false
+        floatingPlusButton.clipsToBounds = true
+        floatingPlusButton.layer.cornerRadius = floatingPlusButton.frame.width/2
+        floatingPlusButton.backgroundColor = .black
+        floatingPlusButton.addTarget(self, action: #selector(EntryListTableViewController.floatingPlusButtonTapped), for: .touchUpInside)
     }
     
     func navigationBarSetup() {

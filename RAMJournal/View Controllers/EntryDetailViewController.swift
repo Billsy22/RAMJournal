@@ -15,9 +15,9 @@ class EntryDetailViewController: UIViewController, UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        entryBodyTextView.delegate = self
-        Constants.shared.textViewFormatChange(textView: entryBodyTextView)
         updateViews()
+//        entryBodyTextView.delegate = self
+        Constants.shared.textViewFormatChange(textView: entryBodyTextView)
     }
     
     
