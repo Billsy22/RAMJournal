@@ -21,6 +21,7 @@ struct Constants {
     
     let editEntrySegueIdentifier = "editEntrySegue"
     let entryTableViewCellIdentifier = "entryTableViewCell"
+    let entryDetailViewControllerIdentifier = "EntryDetailViewController"
     
     
     // MARK: -  Colors

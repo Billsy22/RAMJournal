@@ -59,7 +59,7 @@
         <!--Entry Detail View Controller-->
         <scene sceneID="gH3-Uv-Jv9">
             <objects>
-                <viewController id="IfI-wZ-9qD" customClass="EntryDetailViewController" customModule="RAMJournal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EntryDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IfI-wZ-9qD" customClass="EntryDetailViewController" customModule="RAMJournal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="exh-MR-Lru">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,6 +73,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0SJ-bw-dlZ">
                                 <rect key="frame" x="25" y="124" width="364" height="728"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="EntryDetailViewController"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>

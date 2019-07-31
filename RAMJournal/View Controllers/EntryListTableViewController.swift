@@ -18,13 +18,17 @@ class EntryListTableViewController: UITableViewController {
         navigationBarSetup()
         setUpTableView()
         randomButtonActivation()
-        createFloatingPlusButton()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         randomButtonActivation()
         tableView.reloadData()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        createFloatingPlusButton()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -42,8 +46,10 @@ class EntryListTableViewController: UITableViewController {
     // MARK: -  Actions
     
     @objc func floatingPlusButtonTapped() {
-        self.present(EntryDetailViewController(), animated: true, completion: nil)
+        let entryDetailView = self.storyboard?.instantiateViewController(withIdentifier: Constants.shared.entryDetailViewControllerIdentifier) as! EntryDetailViewController
+        self.navigationController?.pushViewController(entryDetailView, animated: true)
     }
+    
     
     // MARK: - Table View Data Source
     
