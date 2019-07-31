@@ -31,6 +31,7 @@ struct Constants {
     let mainGreenColor = UIColor(red: 54.0/255.0, green: 93.0/255.0, blue: 20.0/255.0, alpha: 1.0)
     let mainPurpleColor = UIColor(red: 201.0/255.0, green: 186.0/255.0, blue: 221.0/255.0, alpha: 1.0)
     let mainLightGrayColor = UIColor(red: 189.0/255.0, green: 193.0/255.0, blue: 199.0/255.0, alpha: 1.0)
+    let lightYellowColor = UIColor(red: 255.0/255.0, green: 250.0/255.0, blue: 50.0/255.0, alpha: 1.0)
     
     // MARK: -  DateFormatter
     
