@@ -27,7 +27,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="IfI-wZ-9qD" kind="showDetail" identifier="editEntrySegue" id="cck-KJ-cvM"/>
+                                    <segue destination="IfI-wZ-9qD" kind="show" identifier="editEntrySegue" id="cck-KJ-cvM"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -37,14 +37,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="2ZT-hf-VMJ">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="NzK-ZS-ev2">
+                        <barButtonItem key="leftBarButtonItem" title="Help" id="NzK-ZS-ev2">
                             <connections>
                                 <segue destination="Us4-bu-xHi" kind="showDetail" id="3Ue-a8-jqL"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="VMX-tr-QiG">
+                        <barButtonItem key="rightBarButtonItem" title="RAM" id="VMX-tr-QiG">
                             <connections>
-                                <segue destination="S1F-dB-ohr" kind="showDetail" id="S6Z-AG-HhW"/>
+                                <segue destination="S1F-dB-ohr" kind="show" id="S6Z-AG-HhW"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -65,13 +65,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entry Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kZL-mU-HC5">
-                                <rect key="frame" x="25" y="69" width="364" height="30"/>
+                                <rect key="frame" x="25" y="113" width="364" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0SJ-bw-dlZ">
-                                <rect key="frame" x="25" y="124" width="364" height="728"/>
+                                <rect key="frame" x="25" y="168" width="364" height="684"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration" identifier="EntryDetailViewController"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -213,13 +213,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entry Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aaj-VP-Ev2">
-                                <rect key="frame" x="25" y="69" width="364" height="30"/>
+                                <rect key="frame" x="25" y="113" width="364" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsa-cf-Hqx">
-                                <rect key="frame" x="25" y="124" width="364" height="728"/>
+                                <rect key="frame" x="25" y="168" width="364" height="684"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
